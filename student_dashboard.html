@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - AI Job Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-briefcase"></i> AI JobPortal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="student_dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="job_search.html">Search Jobs</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">My Applications</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle"></i> Profile
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Account Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Welcome back, Alex!</h2>
+        
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-robot me-2"></i>AI-Powered Resume & Career Counselor</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Upload your resume (PDF, DOCX) to get instant feedback and personalized career advice.</p>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="resumeFile" accept=".pdf,.docx">
+                            <button class="btn btn-primary" type="button" id="analyzeBtn">Analyze My Resume</button>
+                        </div>
+                        <div id="analysis-spinner" class="text-center my-3" style="display: none;">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p class="mt-2">Our AI is analyzing your resume... This may take a moment.</p>
+                        </div>
+
+                        <div id="analysis-results" class="mt-4" style="display: none;">
+                            <h4><i class="fas fa-chart-line text-success"></i> Your Analysis is Ready!</h4>
+                            <hr>
+                            <div class="mb-4">
+                                <h6><strong>Resume Score: 88%</strong></h6>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">88%</div>
+                                </div>
+                                <small class="form-text text-muted">This score reflects keyword optimization, formatting, and skill relevance.</small>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h6><i class="fas fa-exclamation-triangle text-warning"></i> <strong>Skill Gap Analysis (vs. Data Scientist roles)</strong></h6>
+                                <p>Skills you have: <strong>Python, SQL, Pandas, Scikit-learn</strong></p>
+                                <p>Skills to acquire:</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-warning"><strong>TensorFlow/PyTorch:</strong> Essential for deep learning models.</li>
+                                    <li class="list-group-item list-group-item-warning"><strong>Cloud (AWS/GCP):</strong> Deploying models in a cloud environment is a key industry skill.</li>
+                                    <li class="list-group-item list-group-item-info"><strong>Tableau:</strong> Improve your data visualization and storytelling skills.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h6><i class="fas fa-road text-info"></i> <strong>Suggested Career Paths</strong></h6>
+                                <p>Based on your profile, you are a strong candidate for:</p>
+                                <ol>
+                                    <li><strong>Data Analyst:</strong> Leverage your strong SQL and Pandas skills.</li>
+                                    <li><strong>Machine Learning Engineer:</strong> A great next step after strengthening Deep Learning skills.</li>
+                                    <li><strong>Business Intelligence Developer:</strong> Focus on Tableau and data warehousing.</li>
+                                </ol>
+                                <a href="job_search.html" class="btn btn-success mt-2">Find Matching Jobs Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile Status</h5>
+                        <p>Your profile is <strong>90%</strong> complete.</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Complete Profile</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                     <div class="card-body">
+                        <h5 class="card-title">Recent Applications</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Data Scientist at TechCorp
+                                <span class="badge bg-primary rounded-pill">Under Review</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Python Developer at Innovate LLC
+                                <span class="badge bg-secondary rounded-pill">Applied</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 AI JobPortal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
