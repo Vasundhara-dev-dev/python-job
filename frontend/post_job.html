@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - XCruit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom navbar-scrolled">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.png" alt="Logo" height="40" class="me-2"> XCruit
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="employer_dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="post_job.html">Post a Job</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                           <i class="fas fa-building me-1"></i> Company Inc.
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Company Profile</a></li>
+                            <li><a class="dropdown-item" href="account_settings.html">Account Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card card-custom">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="fw-bold mb-2">Create a New Job Posting</h3>
+                        <p class="mb-4">Fill out the details below. This information will be used by our AI to screen and rank candidates.</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="jobTitle" class="form-label fw-bold">Job Title</label>
+                                <input type="text" class="form-control" id="jobTitle" placeholder="e.g., Senior Data Scientist" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="location" class="form-label fw-bold">Location</label>
+                                    <input type="text" class="form-control" id="location" placeholder="e.g., Bengaluru, India" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                     <label for="jobType" class="form-label fw-bold">Job Type</label>
+                                     <select class="form-select" id="jobType">
+                                        <option selected>Select type...</option>
+                                        <option value="Full-time">Full-time</option>
+                                        <option value="Part-time">Part-time</option>
+                                        <option value="Contract">Contract</option>
+                                        <option value="Internship">Internship</option>
+                                     </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="jobDescription" class="form-label fw-bold">Job Description</label>
+                                <textarea class="form-control" id="jobDescription" rows="6" placeholder="Describe the roles and responsibilities..." required></textarea>
+                            </div>
+                             <div class="mb-3">
+                                <label for="requiredSkills" class="form-label fw-bold">Required Skills</label>
+                                <input type="text" class="form-control" id="requiredSkills" placeholder="e.g., Python, SQL, TensorFlow, AWS" required>
+                                <div class="form-text">Enter skills separated by commas. These are crucial for the AI matching algorithm.</div>
+                            </div>
+                            <div class="d-grid mt-4">
+                                <button type="submit" class="btn btn-gradient">Post Job Opening</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 XCruit, Bengaluru, Karnataka. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
