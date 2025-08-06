@@ -11,22 +11,6 @@
 
 ---
 
-### ✨ [View Live Demo](https://your-github-username.github.io/your-repo-name/)
-
-*(Replace the link above with your actual GitHub Pages URL)*
-
-## 📸 Screenshots
-
-A glimpse into the clean, modern, and user-centric interface of XCruit.
-
-| Landing Page                                      | Student Dashboard (AI Analysis)                      |
-| ------------------------------------------------- | ---------------------------------------------------- |
-| ![Homepage](https://via.placeholder.com/400x300.png?text=Homepage+Screenshot) | ![Student Dashboard](https://via.placeholder.com/400x300.png?text=Student+Dashboard) |
-| **Job Search & Filtering** | **Employer Dashboard** |
-| ![Job Search](https://via.placeholder.com/400x300.png?text=Job+Search+Page) | ![Employer Dashboard](https://via.placeholder.com/400x300.png?text=Employer+Dashboard) |
-
-*(Replace the placeholder images with actual screenshots of your project)*
-
 ## 🚀 Key Features
 
 - **AI-Powered Resume Screening (Frontend Simulation):** Users can upload their resumes and receive instant, simulated feedback on formatting, keywords, and skill gaps.
