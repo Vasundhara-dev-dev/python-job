@@ -1,0 +1,7 @@
+{
+  "Data Scientist": ["Python", "Machine Learning", "SQL", "Pandas", "TensorFlow", "Statistics"],
+  "Backend Developer": ["Java", "Spring Boot", "SQL", "Docker", "AWS", "REST API"],
+  "AI Engineer": ["Python", "Deep Learning", "PyTorch", "TensorFlow", "NLP", "AWS"],
+  "Frontend Developer": ["JavaScript", "React", "HTML", "CSS", "Redux"],
+  "Cloud Engineer": ["AWS", "Azure", "Kubernetes", "Docker", "Linux", "Terraform"]
+}

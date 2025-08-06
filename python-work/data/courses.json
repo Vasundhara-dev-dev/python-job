@@ -1,0 +1,35 @@
+{
+  "Python": [
+    {
+      "course_name": "Python for Everybody",
+      "provider": "Coursera",
+      "link": "https://www.coursera.org/specializations/python"
+    },
+    {
+      "course_name": "Complete Python Bootcamp",
+      "provider": "Udemy",
+      "link": "https://www.udemy.com/course/complete-python-bootcamp/"
+    }
+  ],
+  "Machine Learning": [
+    {
+      "course_name": "Machine Learning by Andrew Ng",
+      "provider": "Coursera",
+      "link": "https://www.coursera.org/learn/machine-learning"
+    }
+  ],
+  "AWS": [
+    {
+      "course_name": "AWS Cloud Practitioner Essentials",
+      "provider": "AWS Training",
+      "link": "https://aws.amazon.com/training/digital/"
+    }
+  ],
+  "Docker": [
+    {
+      "course_name": "Docker for Developers",
+      "provider": "Pluralsight",
+      "link": "https://www.pluralsight.com/courses/docker-getting-started"
+    }
+  ]
+}

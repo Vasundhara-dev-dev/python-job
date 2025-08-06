@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Machine Learning Engineer",
+    "description": "Looking for an ML Engineer skilled in Python, TensorFlow, and cloud deployment. Experience in NLP and data pipelines is a plus."
+  },
+  {
+    "title": "Backend Developer",
+    "description": "We need a backend engineer with experience in Java, Spring Boot, Docker, and AWS. Knowledge of microservices is preferred."
+  },
+  {
+    "title": "Data Analyst",
+    "description": "Seeking a Data Analyst proficient in SQL, Excel, Power BI, and Python. Strong analytical skills required."
+  },
+  {
+    "title": "AI Research Intern",
+    "description": "Internship for students with knowledge of deep learning, PyTorch, and research in NLP or Computer Vision."
+  }
+]
