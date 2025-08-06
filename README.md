@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/badge/Built%20with-Bootstrap%205-purple?style=for-the-badge" alt="Bootstrap 5">
 </p>
 
