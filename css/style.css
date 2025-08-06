@@ -1,0 +1,38 @@
+/* General Body & Hero Section Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(27, 47, 79, 0.7), rgba(27, 47, 79, 0.7)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070') center center/cover no-repeat;
+    padding: 100px 0;
+}
+
+/* Card Enhancements */
+.card {
+    border: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12) !important;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Dashboard Styles */
+#analysis-results h6 {
+    font-weight: 600;
+    color: #343a40;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.fa-user-circle {
+    font-size: 1.2rem;
+}
