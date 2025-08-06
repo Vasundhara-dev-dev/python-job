@@ -10,82 +10,73 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top navbar-custom">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/logo.png" alt="XCruit Logo" height="35" class="me-2"> XCruit</a>
+                <img src="assets/logo.png" alt="XCruit Logo" height="40" class="me-2">
+                XCruit
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="job_search.html">Find Jobs</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="employer_dashboard.html">For Employers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-lg-3" href="login.html">Login / Register</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="job_search.html">Find Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="employer_dashboard.html">For Employers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-gradient" href="register.html">Get Started</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="hero-section text-white text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Power Your Career with AI</h1>
-            <p class="lead my-4">Get personalized career counseling, AI-powered resume feedback, and find jobs that perfectly match your skills.</p>
-            <a href="register.html" class="btn btn-primary btn-lg mx-2">Get Started as a Student</a>
-            <a href="register.html" class="btn btn-outline-light btn-lg mx-2">Post a Job as an Employer</a>
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">Your Future, Intelligently Matched.</h1>
+            <p class="lead mb-5 mx-auto" style="max-width: 600px;">Leverage the power of AI to analyze your resume, discover hidden strengths, and connect with opportunities that truly fit your profile.</p>
+            <div>
+                <a href="job_search.html" class="btn btn-gradient btn-lg mx-2">Explore Open Roles</a>
+                <a href="student_dashboard.html" class="btn btn-outline-primary btn-lg mx-2">Analyze My Resume</a>
+            </div>
         </div>
     </header>
 
     <section class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-5">Why Choose Us?</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <i class="fas fa-robot fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">AI Resume Screening</h5>
-                            <p class="card-text">Upload your resume and get instant, actionable feedback on formatting, keywords, and skill gaps to stand out.</p>
-                        </div>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">A Smarter Way to Build Your Career</h2>
+                <p>Go beyond traditional job searching with our intelligent platform.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <div class="mb-3"><i class="fas fa-robot fa-3x" style="color: var(--primary-color);"></i></div>
+                        <h5 class="card-title">AI Resume Screening</h5>
+                        <p class="card-text">Receive instant, data-driven feedback on your resume to optimize it for any job application.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Personalized Career Counseling</h5>
-                            <p class="card-text">Our AI analyzes your skills and interests to suggest ideal career paths, courses, and certifications for your growth.</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <div class="mb-3"><i class="fas fa-lightbulb fa-3x" style="color: var(--primary-color);"></i></div>
+                        <h5 class="card-title">Personalized Career Counseling</h5>
+                        <p class="card-text">Our AI analyzes your skills and interests to suggest ideal career paths and skills to develop.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <i class="fas fa-magnifying-glass-chart fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Intelligent Job Matching</h5>
-                            <p class="card-text">For employers and job seekers alike, our algorithms match the right talent to the right opportunity, effortlessly.</p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <div class="mb-3"><i class="fas fa-magnifying-glass-chart fa-3x" style="color: var(--primary-color);"></i></div>
+                        <h5 class="card-title">Intelligent Job Matching</h5>
+                        <p class="card-text">Stop scrolling endlessly. Get matched with roles where you have the highest chance of success.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <footer class="bg-dark text-white text-center p-4">
-        <div class="container">
-            <p>&copy; 2025 XCruit. All Rights Reserved.</p>
+    <footer class="py-4 mt-5" style="background-color: #eef2ff;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 XCruit, Bengaluru, Karnataka. All Rights Reserved.</p>
         </div>
     </footer>
 
