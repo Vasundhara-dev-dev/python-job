@@ -7,69 +7,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Custom style to center the login form */
-        .login-container {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f8f9fa;
-        }
-    </style>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/logo.png" alt="XCruit Logo" height="35" class="me-2"> XCruit</a>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Back to Home</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    <div class="login-container">
+    <div class="auth-container">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <div class="card shadow-lg">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom border-0">
                         <div class="card-body p-4 p-md-5">
                             <div class="text-center mb-4">
-                                <h3 class="fw-bold">Welcome Back!</h3>
-                                <p class="text-muted">Login to continue to your dashboard.</p>
+                                <a href="index.html"><img src="assets/logo.png" height="50" alt="Logo"></a>
+                                <h3 class="fw-bold mt-3">Welcome Back</h3>
+                                <p>Enter your credentials to access your account.</p>
                             </div>
-                            <form action="student_dashboard.html" method="get"> <div class="form-floating mb-3">
+                            <form action="student_dashboard.html" method="get">
+                                <div class="form-floating mb-3">
                                     <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                                    <label for="email"><i class="fas fa-envelope me-2"></i>Email address</label>
+                                    <label for="email">Email address</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="password" class="form-control" id="password" placeholder="Password" required>
-                                    <label for="password"><i class="fas fa-lock me-2"></i>Password</label>
+                                    <label for="password">Password</label>
                                 </div>
-
                                 <div class="d-flex justify-content-between align-items-center mb-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="rememberMe">
-                                        <label class="form-check-label" for="rememberMe">
-                                            Remember me
-                                        </label>
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
                                     </div>
-                                    <a href="#" class="small">Forgot password?</a>
+                                    <a href="#" class="small text-decoration-none" style="color: var(--primary-color);">Forgot password?</a>
                                 </div>
-                                
                                 <div class="d-grid">
-                                    <button class="btn btn-primary btn-lg" type="submit">Login</button>
+                                    <button class="btn btn-gradient" type="submit">Login</button>
                                 </div>
-
-                                <hr class="my-4">
-
-                                <div class="text-center">
-                                    <p class="small">Don't have an account? <a href="register.html">Register here</a></p>
-                                </div>
+                                <p class="text-center small mt-4">Don't have an account? <a href="register.html" class="fw-bold text-decoration-none" style="color: var(--primary-color);">Sign up</a></p>
                             </form>
                         </div>
                     </div>
@@ -77,9 +47,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
